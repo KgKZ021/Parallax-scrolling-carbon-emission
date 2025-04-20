@@ -1,0 +1,401 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5em 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99999;
+}
+
+#header .logo {
+    color: #002431;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-decoration: none;
+}
+
+#header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header ul li {
+    list-style: none;
+    margin: 0px 10px;
+}
+
+#header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #003549;
+    border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+    background: #003549;
+    color: white;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgb(77, 77, 77), transparent);
+    z-index: 10;
+}
+
+section img {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    
+       
+   
+}
+
+section #text span {
+    font-size: 0.2em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: white;
+}
+
+section #text {
+    position: absolute;
+    color: #004660;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: 'Rancho', cursive;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+
+#explore {
+    text-decoration: none;
+    padding: 8px 25px;
+    background: white;
+    color: #003549;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(100px);
+}
+
+#explore:hover {
+    background: #003549;
+    color: white;
+    
+}
+
+#boat{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 80%;
+    @media screen and (min-width: 800px) {
+        margin-top: 45%;
+        transform: translate(-50%, -50%);
+    }
+    
+}
+#cloud{
+    width: 30%;
+    height: auto;
+    margin-top: 20%;;
+    @media screen and (min-width: 800px) {
+        width:20%;
+        height: auto;
+        margin-top: 10%;
+    }
+    
+}
+
+#moon{
+    width: 30%;
+    height: auto;
+    margin-top: 20%;;
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    @media screen and (min-width: 800px) {
+        width:20%;
+        height: auto;
+        position: absolute;
+        margin-top: 5%;
+        left: 40%;
+    }
+
+    
+}
+
+#bridge{
+    width: 110%;
+    height: auto;
+    margin-top: 55%;
+    position: absolute;
+    top: 50%;
+    @media screen and (min-width: 800px) {
+        width:100%;
+        height: auto;
+        margin-top: 25%;
+        position: absolute;
+        top: 50%;
+    }   
+}
+
+#city{
+    width: 110%;
+    height: auto;
+    margin-top: 45%;
+    @media screen and (min-width: 800px) {
+        width: 100%;
+        height: auto;
+        margin-top: 15%;;
+    } 
+}
+
+.glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-Left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    padding: 1em;
+    margin-bottom: 2%;
+}
+
+.sec {
+    position: relative;
+    padding: 10%;
+    background: rgb(77, 77, 77);
+    padding-bottom: 15%;
+    z-index: 50;
+    overflow: hidden;
+}
+
+.sec h2 {
+    font-size: 3.5em;
+}
+
+.sec #name {
+    font-size: 1.5em;
+    font-family: 'Rancho', cursive;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.sec h3 {
+    font-size: 1.8em;
+    margin: 2%;
+}
+
+.sec h4 {
+    font-size: 1.2em;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.sec p {
+    margin: 10px 20px 40px;
+}
+
+.sec ul {
+    margin: 0 5%;
+}
+
+.sec ul li {
+    margin: 2%;
+}
+
+
+.cares {
+    position: absolute;
+    opacity: 0.8;
+}
+
+#car1 {
+    top: 0%;
+}
+
+#car2 {
+    top: 32%;
+}
+
+#car3 {
+    top: 60%;
+}
+
+#car4 {
+    top: 87%;
+}
+
+#road {
+    width: 100%;
+    left: 0;
+    bottom: -5;
+    opacity: 1;
+}
+
+.underextra {
+    position: absolute;
+    opacity: 1;
+}
+
+#extra1 {
+    top: 10%;
+    left: 1%;
+    width: 20%;
+}
+
+#extra2 {
+    top: 16%;
+    right: 1%;
+    width: 10%;
+}
+
+#extra3 {
+    top: 40%;
+    left: 0;
+    width: 12%;
+}
+
+#extra4 {
+    top: 50%;
+    right: 0;
+    width: 12%;
+}
+
+#extra5 {
+    top: 70%;
+    left: 1%;
+    width: 10%;
+}
+
+#extra6 {
+    top: 75%;
+    right: 2%;
+    width: 6%;
+}
+
+#extra7 {
+    top: 90%;
+    right: 70%;
+    width: 10%;
+    z-index: 100;
+}
+
+
+
+/*animation*/
+
+.CO2s {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	position: absolute;
+	bottom: 0;
+
+	--transform-duration: 6s;
+	--transform-y: -300vh;
+}
+
+.CO2s img {
+	opacity: 0;
+	animation-name: CO2;
+	animation-timing-function: linear;
+	animation-duration: var(--transform-duration);
+	animation-iteration-count: infinite;
+}
+
+@keyframes CO2 {
+	0% {
+		transform: translateY(0);
+		opacity: 0;
+	}
+
+	10% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateY(var(--transform-y));
+		opacity: 1;
+	}
+}
+
+.CO2s img:nth-child(1) {
+	animation-delay: 2s;
+}
+
+.CO2s img:nth-child(2) {
+	animation-delay: 5s;
+}
+
+.CO2s img:nth-child(3) {
+	animation-delay: 3s;
+}
+
+.CO2s img:nth-child(4) {
+	animation-delay: 6s;
+}
+
+.CO2s img:nth-child(5) {
+	animation-delay: 1s;
+}
+
+.CO2s img:nth-child(6) {
+	animation-delay: 4s;
+}
+
+.CO2s img:nth-child(7) {
+	animation-delay: 6s;
+}
+
+
