@@ -9,7 +9,6 @@ if (screen.width < 400) {
      time.css('--transform-duration', '15s');
     time.css('--transform-y', '-700vh');
 
-    // Padding values for mobile
     car2move = 1680;
     car3move = 3000;
     car4move = 4300;
